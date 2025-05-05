@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>They Watch</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #2F4F4F; /* Dark Slate Gray */
+            background-image: none;
+            color: #B0C4DE; /* Light Steel Blue */
+        }
+        header h1 {
+            color: #778899; /* Light Slate Gray */
+            text-shadow: 1px 1px #111;
+        }
+        .content-block {
+            background-color: rgba(0, 0, 0, 0.85); /* Near black overlay */
+            border-color: #708090; /* Slate Gray */
+        }
+        .gallery-item {
+            border: 1px solid #4682B4; /* Steel Blue */
+            padding: 10px;
+            margin: 20px auto;
+            background-color: rgba(176, 196, 222, 0.1); /* Light Steel Blue tint */
+            max-width: 70%;
+            text-align: center;
+        }
+        .gallery-image-placeholder {
+             width: 80%; 
+             height: 150px; 
+             background-color: #1a1a1a; 
+             margin: 10px auto; 
+             border: 1px dashed #778899; 
+             display: flex; 
+             align-items: center; 
+             justify-content: center; 
+             color: #555; 
+             font-size: 0.8em;
+        }
+        .watching-text {
+            font-style: italic;
+            color: #AFEEEE; /* Pale Turquoise */
+        }
+        .distorted {
+            filter: blur(1px) contrast(1.5);
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE EYES FOLLOW YOU</h1>
+        <nav>
+            <span style="color: #708090;">... silent observers ...</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-block">
+            <h2>Uncanny Gallery</h2>
+            <p>Dimly lit corridors lined with figures. Portraits with eyes that seem to shift. Mannequins posed mid-gesture.</p>
+            
+            <div class="gallery-item">
+                <p class="watching-text">It smiles too wide.</p>
+                <!-- <div class="gallery-image-placeholder">Distorted Portrait Placeholder</div> -->
+                <img src="../images/distortedportrait.jpg" alt="Distorted smiling portrait" class="weird-image" style="max-width: 80%; height: auto; margin: 10px auto; border: 1px dashed #778899;">
+            </div>
+            
+            <div class="gallery-item">
+                 <p class="watching-text">Frozen mid-step.</p>
+                 <!-- <div class="gallery-image-placeholder">Mannequin Placeholder</div> -->
+                 <img src="../images/mannequin.jpg" alt="Mannequin frozen mid-step" class="weird-image" style="max-width: 80%; height: auto; margin: 10px auto; border: 1px dashed #778899;">
+            </div>
+
+            <p>You feel a thousand unseen eyes boring into your back. The air is cold.</p>
+            <p class="repeated-text distorted" style="color: #FF6347;">They know you're here.</p>
+            <p><a href="backroom_archives.html">Retreat to the archives?</a></p>
+            <p><a href="backroom_glitch.html">Touch one of the exhibits?</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p style="color: #708090;">~*~ Don't blink ~*~</p>
+    </footer>
+
+</body>
+</html> 

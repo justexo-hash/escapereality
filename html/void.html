@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Void</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #000000;
+            background-image: none;
+            color: #111; /* Very dark grey text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        header, footer, .sidebar { display: none; } /* Hide standard elements */
+        main { flex-grow: 0; } /* Don't stretch main */
+        .content-block {
+            border: 1px dotted #222;
+            background-color: #050505;
+            padding: 50px;
+        }
+        .fading-text {
+            animation: fade-in-out 15s infinite;
+        }
+        @keyframes fade-in-out {
+            0%, 100% { opacity: 0.1; }
+            50% { opacity: 0.5; }
+        }
+        a { color: #333; }
+        a:visited { color: #222; }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="content-block">
+            <h2 class="fading-text">You Found The Void</h2>
+            <p class="fading-text" style="animation-delay: 3s;">It stares back.</p>
+            <p><a href="index.html">&lt;- Escape?</a></p>
+        </section>
+    </main>
+</body>
+</html> 

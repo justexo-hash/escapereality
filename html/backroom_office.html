@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1?</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #FFFFE0; /* Sickly yellow */
+            background-image: none; /* Override tiled background for this room */
+        }
+        .flicker {
+            animation: flicker-animation 0.1s infinite alternate;
+        }
+        @keyframes flicker-animation {
+            from { opacity: 0.95; }
+            to { opacity: 1; }
+        }
+        .humming-text {
+            color: #A0A0A0; /* Grey */
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="flicker">THE HUMMING NEVER STOPS</h1>
+        <nav>
+            <!-- Navigation might feel out of place here -->
+            <span style="color: #aaa;">...no clear exit...</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-block" style="border-color: #ccc;">
+            <h2>Endless Office Space</h2>
+            <p>Miles of identical cubicles stretch under the buzzing fluorescent lights.</p>
+            <p class="humming-text">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+            <!-- Placeholder for an office image -->
+            <!-- <div style="width: 80%; height: 200px; background-color: #ddd; margin: 15px auto; border: 1px solid #aaa; display: flex; align-items: center; justify-content: center; color: #555;">Office Backroom Image Here</div> -->
+            <img src="../images/backroomoffice.webp" alt="Endless office backroom with yellow lighting" class="weird-image">
+            <p>Every computer screen is blank. Every chair is empty.</p>
+            <p class="repeated-text flicker">Is anyone else here?</p>
+            <p><a href="where.html">Follow the carpet stains?</a></p>
+            <p><a href="backroom_pool.html">Try that door over there?</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="humming-text">~*~ Just the buzzing... forever ~*~</p>
+    </footer>
+
+</body>
+</html> 

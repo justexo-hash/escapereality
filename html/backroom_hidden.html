@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Because</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- Link base styles -->
+    <style>
+        /* Heavy overrides for abstract chaos */
+        body {
+            background: linear-gradient(135deg, magenta, yellow, cyan);
+            color: black;
+            font-family: 'Times New Roman', serif; /* Contrast with pixel font */
+            overflow: auto; /* Allow scrolling if content overflows weirdly */
+            margin: 0;
+            padding: 0;
+        }
+        header, footer, .content-block, .sidebar, nav { 
+            /* Override standard structures */
+            display: block;
+            border: none;
+            background: none;
+            text-align: left;
+            color: inherit;
+            padding: 5px;
+            margin: 0;
+            text-shadow: none;
+        }
+        h1, h2, h3 {
+             font-family: 'Courier New', monospace;
+             color: lime; 
+             background-color: navy;
+             display: inline; /* Break flow */
+             padding: 2px 5px;
+             margin: 10px 0;
+             font-size: 1.5em;
+        }
+        p {
+            position: relative; /* Allow weird positioning */
+            font-size: 1.1em;
+            line-height: 1.3;
+            margin: 15px 5%;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            padding: 8px;
+        }
+        a {
+            color: cyan;
+            font-weight: bold;
+            text-decoration: underline wavy red;
+        }
+        a:visited {
+            color: yellow;
+        }
+        .floating {
+            position: absolute;
+            top: 150px;
+            right: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: 3px dotted yellow;
+            transform: rotate(15deg);
+            font-size: 0.8em;
+            z-index: 5;
+        }
+        .large-symbol {
+            font-size: 5em;
+            color: rgba(255, 255, 0, 0.5);
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            z-index: -1; /* Behind text */
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- No standard header -->
+    <div class="large-symbol">&#9774;</div> <!-- Peace symbol? -->
+
+    <h1>REASON IS OVERRATED</h1>
+
+    <p>You arrived. Just because. The colours taste like static.</p>
+
+    <h2>Instructions Unclear</h2>
+    
+    <p style="margin-left: 20%; background-color: rgba(0, 50, 100, 0.6);">The square peg fits if you ignore the circle. Always ignore the circle. <a href="backroom_glitch.html">Circles lead to errors.</a></p>
+
+    <div class="floating">
+        This floats here. Why? <a href="why.html">Ask again.</a>
+    </div>
+
+    <p style="font-family: 'Comic Sans MS', sans-serif; color: magenta;">Sometimes the font changes. Just because. Did you remember to lock the door behind the concept of locking?</p>
+
+    <h3>Possibilities:</h3>
+    
+    <p>Maybe <a href="index.html">this</a> leads home? (It says home, right?)</p>
+    <p style="margin-left: 10%; margin-right: 30%;">Or perhaps <a href="nowhere.html">that empty space</a> is more comfortable.</p>
+    <p>Or... just stay. Why not? <a href="backroom_hidden.html">Stay.</a></p>
+
+    <!-- No standard footer -->
+
+</body>
+</html> 

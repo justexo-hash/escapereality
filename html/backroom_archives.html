@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragments</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #36454F; /* Charcoal Grey */
+            background-image: none;
+            color: #A9A9A9; /* Dark Gray text */
+        }
+        header h1 {
+            color: #D3D3D3; /* Light Gray */
+            text-shadow: 1px 1px #000;
+        }
+        .content-block {
+            background-color: rgba(20, 20, 20, 0.8); /* Very dark overlay */
+            border-color: #696969; /* Dim Gray */
+        }
+        .fragment-text {
+            font-family: 'Times New Roman', serif;
+            font-size: 1em;
+            line-height: 1.2;
+            position: relative;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px dashed #555;
+            background-color: rgba(255, 255, 255, 0.05);
+            opacity: 0.8;
+        }
+        .fragment-text::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+        .overlapping {
+            position: relative;
+            z-index: 1;
+        }
+        .overlapping + .overlapping {
+            margin-top: -30px; /* Make text overlap */
+            margin-left: 20px;
+            z-index: 2; /* Bring forward */
+            opacity: 0.7;
+            color: #808080; /* Grey */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WHERE MEMORIES FRACTURE</h1>
+        <nav>
+            <span style="color: #696969;">... lost records ...</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-block">
+            <h2>Fragmented Archives</h2>
+            <p>Endless aisles of shelves tower into darkness, filled with unlabeled boxes and files.</p>
+            <div class="fragment-text overlapping">
+                ...met her by the fountain. The water was off that day... promised I would return, but the address seems wrong now...
+            </div>
+            <div class="fragment-text overlapping">
+                ...Recipe calls for ingredients that don't exist anymore. Substitutions change everything... taste is never the same...
+            </div>
+            <div class="fragment-text overlapping">
+                ...Map shows a street here. There is only wall. Was the map wrong, or the world?...
+            </div>
+            <p>Scattered papers whisper incomplete stories.</p>
+            <p class="repeated-text" style="color: #778899;">File not found.</p>
+            <p><a href="backroom_attic.html">Close the trunk?</a></p>
+            <p><a href="backroom_gallery.html">Follow a paper trail?</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p style="color: #696969;">~*~ The past is unreadable ~*~</p>
+    </footer>
+
+</body>
+</html> 

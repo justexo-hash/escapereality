@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submerged</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #ADD8E6; /* Light blue */
+            background-image: none; /* Override tiled background */
+            color: #000080; /* Dark blue text */
+        }
+        header h1 {
+            color: #AFEEEE; /* Pale turquoise */
+            text-shadow: 2px 2px #4682B4; /* Steel blue shadow */
+        }
+        .content-block {
+            background-color: rgba(240, 248, 255, 0.8); /* Alice blue, slightly transparent */
+            border-color: #00FFFF; /* Cyan */
+        }
+        .watery-text {
+            color: #4682B4;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        .echo {
+             animation: echo-text 5s infinite linear;
+             opacity: 0.7;
+        }
+        @keyframes echo-text {
+            0% { transform: scale(1); opacity: 0.7; }
+            50% { transform: scale(1.05); opacity: 0.4; }
+            100% { transform: scale(1); opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE WATER IS ALWAYS WARM</h1>
+        <nav>
+            <span style="color: #4682B4;">... echoes drift ...</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-block">
+            <h2>Endless Poolrooms</h2>
+            <p>The smell of chlorine hangs heavy in the air. Water laps gently against pristine white tiles.</p>
+            <p class="watery-text echo">drip... drip... splash...</p>
+            <!-- Placeholder for a poolrooms image -->
+            <!-- <div style="width: 80%; height: 200px; background-color: #B0E0E6; margin: 15px auto; border: 3px dotted #00FFFF; display: flex; align-items: center; justify-content: center; color: #000080;">Poolrooms Image Here</div> -->
+            <img src="../images/poolrooms.jpg" alt="Endless tiled poolrooms" class="weird-image">
+            <p>There are no other swimmers. Just endless, interconnected pools and corridors.</p>
+            <p class="repeated-text echo" style="color: #0000CD;">Where does the water come from?</p>
+            <p><a href="backroom_office.html">Listen for the humming?</a></p>
+            <p><a href="backroom_attic.html">Dive deeper?</a></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="watery-text">~*~ Just keep swimming ~*~</p>
+    </footer>
+
+</body>
+</html> 
