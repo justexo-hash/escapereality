@@ -4,7 +4,7 @@
 body {
     /* Consider a weird background image or pattern */
     /* background-image: url('your-background-image.gif'); */
-    background-image: url('../images/background.jpg'); /* <-- Add your image filename here */
+    background-image: url('images/background.jpg'); /* <-- Add your image filename here */
     background-repeat: repeat; /* Tile the image */
     background-color: #c0c0c0; /* Fallback color */
     /* font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Classic 'amateur' fonts */
